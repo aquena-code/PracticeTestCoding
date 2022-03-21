@@ -54,3 +54,11 @@ class Calculator:
             reverse_chain = character + reverse_chain
         return reverse_chain
 
+#For exercise 6
+
+    def is_palindromo(self, word):
+        reverse_chain = ""
+        for character in word:
+            reverse_chain = character + reverse_chain
+
+        return reverse_chain == word

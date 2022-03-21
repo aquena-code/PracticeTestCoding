@@ -50,3 +50,10 @@ class CalculatorTest(unittest.TestCase):
         cal = Calculator()
         result = cal.reverse("Cadena")
         self.assertEqual("anedaC", result)
+
+#Test for Exercise 6
+
+    def test_palindromo(self):
+        cal = Calculator()
+        result = cal.is_palindromo("rayar")
+        self.assertTrue(result)
