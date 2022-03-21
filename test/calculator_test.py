@@ -62,11 +62,12 @@ class CalculatorTest(unittest.TestCase):
 
     def test_max_min_average_result(self):
         numbers = [3, 4, 5, 3, 2, 3, 5, 6, 5, 1]
+        result = Resultado()
         cal = Calculator()
         result = cal.get_results()
-        self.assertEqual(1, result.get_min)
-        self.assertEqual(6, result.get_max)
-        self.assertEqual(3.7, result.get_average)
+        self.assertEqual(1, result.min_number)
+        self.assertEqual(6, result.max_number)
+        self.assertEqual(3.7, result.average)
 
 #Test for Exercise 8
 
@@ -75,7 +76,6 @@ class CalculatorTest(unittest.TestCase):
         cal = Calculator()
         result = cal.get_longer_country(countries)
         self.assertEqual("Argentina", result)
-
 
 #Test for Exercise 10
 
