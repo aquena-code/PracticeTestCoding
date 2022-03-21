@@ -57,3 +57,22 @@ class CalculatorTest(unittest.TestCase):
         cal = Calculator()
         result = cal.is_palindromo("rayar")
         self.assertTrue(result)
+
+#Test for Exercise 7
+
+    def test_max_min_average_result(self):
+        numbers = [3, 4, 5, 3, 2, 3, 5, 6, 5, 1]
+        cal = Calculator()
+        result = cal.get_results()
+        self.assertEqual(1, result.get_min)
+        self.assertEqual(6, result.get_max)
+        self.assertEqual(3.7, result.get_average)
+
+#Test for Exercise 8
+
+    def test_longer_country(self):
+        countries = ['Bolivia', 'Argentina', 'Colombia', 'Italia', 'Japon']
+        cal = Calculator()
+        result = cal.get_longer_country(countries)
+        self.assertEqual("Argentina", result)
+

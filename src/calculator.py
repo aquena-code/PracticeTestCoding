@@ -62,3 +62,14 @@ class Calculator:
             reverse_chain = character + reverse_chain
 
         return reverse_chain == word
+
+#For exercise 8
+
+    def get_longer_country(self, countries):
+        longer = 0
+        longer_country = ''
+        for country in countries:
+            if longer < len(country):
+                longer = len(country)
+                longer_country = country
+        return longer_country
