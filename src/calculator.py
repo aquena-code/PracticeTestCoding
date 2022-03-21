@@ -28,8 +28,6 @@ class Calculator:
         else:
             return "ninguno"
 
-
-
     def is_a_vocal(self, valor):
         vocales = ['a', 'e', 'i', 'o', 'u']
 
@@ -47,3 +45,12 @@ class Calculator:
             return True
         except:
             return False
+
+#For exercise 5
+
+    def reverse(self, cadena):
+        reverse_chain = ""
+        for character in cadena:
+            reverse_chain = character + reverse_chain
+        return reverse_chain
+

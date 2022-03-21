@@ -43,3 +43,10 @@ class CalculatorTest(unittest.TestCase):
         cal = Calculator()
         result = cal.is_vocal('2')
         self.assertEqual("number", result)
+
+#Test for Exercise 5
+
+    def test_reverse(self):
+        cal = Calculator()
+        result = cal.reverse("Cadena")
+        self.assertEqual("anedaC", result)
