@@ -73,3 +73,9 @@ class Calculator:
                 longer = len(country)
                 longer_country = country
         return longer_country
+
+#For exercise 10
+
+    def count_characters(self, chain):
+        text = chain.replace(" ","")
+        return len(text)

@@ -76,9 +76,11 @@ class CalculatorTest(unittest.TestCase):
         result = cal.get_longer_country(countries)
         self.assertEqual("Argentina", result)
 
+
 #Test for Exercise 10
 
     def test_counter_characters(self):
         cal = Calculator()
         result = cal.count_characters("this chain is very large")
-        self.assertEqual(25, result)
+        self.assertEqual(20, result)
+
