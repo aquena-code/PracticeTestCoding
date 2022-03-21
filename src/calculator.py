@@ -1,3 +1,5 @@
+from src.resultado import Resultado
+
 class Calculator:
     def add(self, valor1, valor2):
         return valor1 + valor2
@@ -62,6 +64,21 @@ class Calculator:
             reverse_chain = character + reverse_chain
 
         return reverse_chain == word
+#For exercise 7
+    def calculate_results(self, numbers):
+        average = 0
+
+        result = Resultado()
+        numbers.sort()
+
+        for number in numbers:
+            average = average + number
+        average = average/len(numbers)
+        
+        result.min_number = numbers[0]
+        result.max_number = numbers[len(numbers)-1]
+        result.average = average
+        return result
 
 #For exercise 8
 

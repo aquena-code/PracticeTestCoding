@@ -1,5 +1,6 @@
 import unittest
 from src.calculator import Calculator
+from src.resultado import Resultado
 
 class CalculatorTest(unittest.TestCase):
     def test_add(self):
@@ -64,7 +65,7 @@ class CalculatorTest(unittest.TestCase):
         numbers = [3, 4, 5, 3, 2, 3, 5, 6, 5, 1]
         result = Resultado()
         cal = Calculator()
-        result = cal.get_results()
+        result = cal.calculate_results(numbers)
         self.assertEqual(1, result.min_number)
         self.assertEqual(6, result.max_number)
         self.assertEqual(3.7, result.average)
