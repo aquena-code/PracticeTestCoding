@@ -27,3 +27,19 @@ class CalculatorTest(unittest.TestCase):
         cal = Calculator()
         result = cal.max_number(-5, 2, -10)
         self.assertEqual(2, result)
+
+#Test for Exercise 4
+    def test_is_vocal(self):
+        cal = Calculator()
+        result = cal.is_vocal("A")
+        self.assertEqual("vocal", result)
+
+    def test_is_consonante(self):
+        cal = Calculator()
+        result = cal.is_vocal('b')
+        self.assertEqual("consonante", result)
+
+    def test_is_number(self):
+        cal = Calculator()
+        result = cal.is_vocal('2')
+        self.assertEqual("number", result)
